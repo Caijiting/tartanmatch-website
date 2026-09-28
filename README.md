@@ -52,6 +52,16 @@ This creates a standalone `dist/` directory suitable for static hosting, includi
 
 The repository includes all assets required to run and build the website. Original presentations, the root-level paper copy, `.work/`, and `dist/` are excluded from version control. To regenerate assets, place the original source files in the project root.
 
+## GitHub Pages deployment
+
+The `gh-pages` branch contains only the built website and a `.nojekyll` file. In repository settings, enable **Pages → Deploy from a branch**, select **gh-pages**, and use the root directory (`/`). GitHub publishes updates pushed to this branch.
+
+The intended project URL is https://caijiting.github.io/tartanmatch-website/.
+
+To update the site, run `npm run build`, copy the contents of `dist/` into a checkout of `gh-pages`, preserve `.nojekyll`, then commit and push that branch.
+
+Deployment is currently pending: GitHub rejected Pages activation because the current account plan does not support Pages for this private repository. Activation requires a supported plan or a change to repository visibility.
+
 ## Media and data sources
 
 1. `mmufm_paper (18).pdf`: paper title, author order, abstract, architecture (Figure 2), cross-modal results (Table II), relative-pose results (Table III), heavy-snow results (Table IV), same-modal results (Table V), and joint-training results (Table VII).
