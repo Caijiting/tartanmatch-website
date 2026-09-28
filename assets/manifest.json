@@ -1,0 +1,282 @@
+[
+  {
+    "asset": "pair-rgb-rgb.mp4",
+    "source": "deck 0, image39.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-rgb-event.mp4",
+    "source": "deck 0, image42.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-rgb-thermal.mp4",
+    "source": "deck 0, image45.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-rgb-depth.mp4",
+    "source": "deck 0, image46.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-rgb-lidar.mp4",
+    "source": "deck 0, image44.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-event-rgb.mp4",
+    "source": "deck 0, image47.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-event-event.mp4",
+    "source": "deck 0, image41.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-event-thermal.mp4",
+    "source": "deck 0, image48.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-event-depth.mp4",
+    "source": "deck 0, image49.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-event-lidar.mp4",
+    "source": "deck 0, image50.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-thermal-rgb.mp4",
+    "source": "deck 0, image51.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-thermal-event.mp4",
+    "source": "deck 0, image52.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-thermal-thermal.mp4",
+    "source": "deck 0, image53.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-thermal-depth.mp4",
+    "source": "deck 0, image54.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-thermal-lidar.mp4",
+    "source": "deck 0, image55.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-depth-rgb.mp4",
+    "source": "deck 0, image56.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-depth-event.mp4",
+    "source": "deck 0, image57.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-depth-thermal.mp4",
+    "source": "deck 0, image43.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-depth-depth.mp4",
+    "source": "deck 0, image40.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-depth-lidar.mp4",
+    "source": "deck 0, image58.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-lidar-rgb.mp4",
+    "source": "deck 0, image59.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-lidar-event.mp4",
+    "source": "deck 0, image60.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-lidar-thermal.mp4",
+    "source": "deck 0, image61.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-lidar-depth.mp4",
+    "source": "deck 0, image62.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "pair-lidar-lidar.mp4",
+    "source": "deck 0, image63.gif",
+    "operation": "GIF to H.264; crop (0, 18, 864, 306)"
+  },
+  {
+    "asset": "real-event-event-minima.mp4",
+    "source": "deck 0, image64.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-event-event-matchanything.mp4",
+    "source": "deck 0, image66.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-event-event-ours.mp4",
+    "source": "deck 0, image68.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-event-lidar-minima.mp4",
+    "source": "deck 0, image65.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-event-lidar-matchanything.mp4",
+    "source": "deck 0, image67.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-event-lidar-ours.mp4",
+    "source": "deck 0, image69.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-event-rgb-minima.mp4",
+    "source": "deck 0, image70.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-event-rgb-matchanything.mp4",
+    "source": "deck 0, image72.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-event-rgb-ours.mp4",
+    "source": "deck 0, image74.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-rgb-lidar-minima.mp4",
+    "source": "deck 0, image77.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-rgb-lidar-matchanything.mp4",
+    "source": "deck 0, image79.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-rgb-lidar-ours.mp4",
+    "source": "deck 0, image81.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-thermal-event-minima.mp4",
+    "source": "deck 0, image82.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-thermal-event-matchanything.mp4",
+    "source": "deck 0, image84.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-thermal-event-ours.mp4",
+    "source": "deck 0, image86.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-thermal-lidar-minima.mp4",
+    "source": "deck 0, image83.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-thermal-lidar-matchanything.mp4",
+    "source": "deck 0, image85.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "real-thermal-lidar-ours.mp4",
+    "source": "deck 0, image87.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "intro-rgb-depth-to-source.mp4",
+    "source": "deck 0, image23.gif",
+    "operation": "GIF to H.264; crop None"
+  },
+  {
+    "asset": "intro-rgb-depth-to-target.mp4",
+    "source": "deck 0, image24.gif",
+    "operation": "GIF to H.264; crop None"
+  },
+  {
+    "asset": "intro-rgb-event-to-source.mp4",
+    "source": "deck 0, image19.gif",
+    "operation": "GIF to H.264; crop None"
+  },
+  {
+    "asset": "intro-rgb-event-to-target.mp4",
+    "source": "deck 0, image20.gif",
+    "operation": "GIF to H.264; crop None"
+  },
+  {
+    "asset": "intro-depth-thermal-to-source.mp4",
+    "source": "deck 0, image27.gif",
+    "operation": "GIF to H.264; crop None"
+  },
+  {
+    "asset": "intro-depth-thermal-to-target.mp4",
+    "source": "deck 0, image28.gif",
+    "operation": "GIF to H.264; crop None"
+  },
+  {
+    "asset": "intro-thermal-event-to-source.mp4",
+    "source": "deck 0, image31.gif",
+    "operation": "GIF to H.264; crop None"
+  },
+  {
+    "asset": "intro-thermal-event-to-target.mp4",
+    "source": "deck 0, image32.gif",
+    "operation": "GIF to H.264; crop None"
+  },
+  {
+    "asset": "dynamic-objects.mp4",
+    "source": "deck 1, image97.gif",
+    "operation": "GIF to H.264; crop (0, 18, 756, 207)"
+  },
+  {
+    "asset": "retina-to-target.mp4",
+    "source": "deck 1, image100.gif",
+    "operation": "GIF to H.264; crop None"
+  },
+  {
+    "asset": "retina-to-source.mp4",
+    "source": "deck 1, image101.gif",
+    "operation": "GIF to H.264; crop None"
+  },
+  {
+    "asset": "satellite-to-source.mp4",
+    "source": "deck 1, image104.gif",
+    "operation": "GIF to H.264; crop None"
+  },
+  {
+    "asset": "satellite-to-target.mp4",
+    "source": "deck 1, image105.gif",
+    "operation": "GIF to H.264; crop None"
+  }
+]
