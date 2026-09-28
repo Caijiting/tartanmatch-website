@@ -1,8 +1,10 @@
-# TartanMatch 项目网站
+# TartanMatch Project Website
 
-本地静态论文网站，参考 MAC-I² 项目页的深色学术展示风格。页面内容为英文，使用提供的论文与 PPT 原始素材，无运行时第三方依赖。
+Static project website for **TartanMatch: Towards Universal Dense Matching Across Modalities**, with a visual style inspired by the MAC-I² project page. The site uses figures and animations from the paper and presentation slides, with no third-party runtime dependencies.
 
-## 本地预览
+## Local preview
+
+Requires Node.js 18 or later. No npm dependency installation is needed. Cloning this private repository requires an authorized GitHub account.
 
 ```bash
 git clone https://github.com/Caijiting/tartanmatch-website.git
@@ -10,66 +12,76 @@ cd tartanmatch-website
 npm run dev
 ```
 
-需要 Node.js 18 或更新版本，无需安装 npm 依赖。私有仓库克隆需要 GitHub 账号授权。
+Open http://localhost:3000. To use another port:
 
-打开 http://localhost:3000 。更换端口：`npm run dev -- --port 3001`。
+```bash
+npm run dev -- --port 3001
+```
 
-若通过 SSH 连接到这台机器，请在本机转发远端的 3000 端口，或使用编辑器的 Ports / 端口转发功能，然后在本机浏览器访问该地址。
+When working on a remote machine over SSH, forward port 3000 to your computer using SSH or your editor's port-forwarding feature, then open the local address in your browser.
 
-## 页面内容
+## Page content
 
-- 首屏背景展示 8 组同模态与跨模态匹配，配有 Source / Target 输入与双向 Warp 标签；首屏后直接展示完整 Abstract。
-- 5 × 5 模态矩阵：25 个配对均可切换并播放原 PPT 动画。
-- DSERT-RoLL 真实场景：6 个配对，MINIMA / MatchAnything / TartanMatch 对比及同步重播。
-- 论文架构图（支持放大）、模态表示、两阶段训练与数据混合。
-- Cross-modal / Same-modal / Relative pose 结果图表与精确数值表格。
-- 重雪传感器输入（单独说明其含义）、视网膜与卫星的双向 Warp 对照与 BibTeX 复制。
-- 深浅主题、移动端布局、键盘导航、减弱动态效果支持。
+- A title background with eight same-modal and cross-modal matching examples, labeled source and target inputs, and both warp directions. The full abstract follows the title section.
+- A 5 × 5 modality matrix with animations for all 25 ordered pairs.
+- Real-world DSERT-RoLL comparisons across six pairs, showing MINIMA, MatchAnything, and TartanMatch with synchronized replay.
+- An expandable architecture figure, modality representations, two-stage training, and the training data mixture.
+- Cross-modal, same-modal, and relative-pose charts with exact values and baseline tables.
+- Heavy-snow sensor observations, bidirectional retinal and satellite warp examples, and a copyable BibTeX citation.
+- Dark and light themes, responsive layouts, keyboard navigation, and reduced-motion support.
 
-## 文件
+## Project files
 
-- `index.html`：页面结构与论文介绍。
-- `styles.css`：样式、主题与响应式布局。
-- `app.js`：视频选择、交互图表、引用复制。
-- `assets/`：已提取和压缩的素材（约 39 MB，含 PDF），直接用于部署。
-- `scripts/serve.mjs`：支持视频 Range 请求的 Node 本地服务。
-- `scripts/build.mjs`：复制静态站点到 `dist/`。
-- `scripts/prepare_assets.py`：从原始 PPT / PDF 提取并转换素材；通常无需重新运行。
-- `.work/`：本地提取文件、检查记录与页面截图，不属于网站发布内容。
+- `index.html`: page structure and paper content.
+- `styles.css`: styling, themes, and responsive layouts.
+- `app.js`: video selection, interactive charts, and citation copying.
+- `assets/`: extracted and compressed media, fonts, and the paper PDF, ready for deployment (approximately 39 MB).
+- `scripts/serve.mjs`: local Node server with HTTP Range support for videos.
+- `scripts/build.mjs`: copies the static site into `dist/`.
+- `scripts/prepare_assets.py`: extracts and converts media from the original presentations and PDF; not needed for normal use.
+- `scripts/prepare_hero_video.py`: generates the title background videos and posters from the finalized presentation.
+- `.work/`: local extraction files, check results, and screenshots; excluded from version control and deployment.
 
-`npm run build` 可生成独立 `dist/`，适合以后部署到 GitHub Pages 等静态托管服务。当前仅本地预览，未部署。
+## Build
 
-仓库包含运行和构建所需的全部网页素材。原始 PPT、根目录论文副本、`.work/` 和 `dist/` 不进入版本管理；重新提取素材时需要自行将原始文件放回项目根目录。
+```bash
+npm run build
+```
 
-## 素材与数据依据
+This creates a standalone `dist/` directory suitable for static hosting, including GitHub Pages. The site is currently available for local preview and has not been deployed.
 
-1. `mmufm_paper (18).pdf`：正式页面标题、作者顺序、摘要、Fig. 2 架构图、Table II 跨模态结果、Table III 位姿结果、Table IV 重雪结果、Table V 同模态结果、Table VII 联合训练结果。
-2. `Modality_pairs_demo_video_new2 (2).pptx`：第 9 页的 25 配对动画，以及第 11–14 页真实传感器对比。原始 GIF 转为 H.264 MP4；移除原动画顶端文字后，网页提供清晰的列标题。
-3. `tartanmatch_pre_final (4) (1).pptx`：作者单位、重雪多传感器观测和未见图像域定性示例。
-4. 字体 DM Sans / Space Grotesk 已下载到本地，预览不依赖 Google Fonts 网络请求。
+The repository includes all assets required to run and build the website. Original presentations, the root-level paper copy, `.work/`, and `dist/` are excluded from version control. To regenerate assets, place the original source files in the project root.
 
-61.9% / 49.6% 为论文摘要报告值。图表中的 strongest baseline 按每个评测设置从 dense baselines 选取，并保留 TartanMatch 并非最优的设置。运行时间使用 Table II 的 27.8 / 27.6 / 206.4 / 262.4 ms，因此页面速度比写为 7.4×。定性迁移例子不作定量性能声明。
+## Media and data sources
 
-提供的 PDF 含投稿模板占位信息。网站未填写未确认的会议、DOI、arXiv 编号或代码仓库；BibTeX 使用 manuscript 条目。公开发布前可替换为最终出版信息。
+1. `mmufm_paper (18).pdf`: paper title, author order, abstract, architecture (Figure 2), cross-modal results (Table II), relative-pose results (Table III), heavy-snow results (Table IV), same-modal results (Table V), and joint-training results (Table VII).
+2. `Modality_pairs_demo_video_new2 (2).pptx`: the 25-pair animations on slide 9 and real-sensor comparisons on slides 11–14. Original GIFs are converted to H.264 MP4, with their top labels replaced by clear column headings on the webpage.
+3. `tartanmatch_pre_final (4) (1).pptx`: author affiliation, heavy-snow sensor observations, and qualitative examples from unseen image domains.
+4. `tartanmatch_talk_finalized.pptx`: the eight matching groups used in the title background, from slides 1, 81, and 82.
+5. DM Sans and Space Grotesk are hosted locally, so previewing the site does not require requests to Google Fonts. Their license files are included in `assets/licenses/`.
 
-若需重新提取素材，使用 Python 3.11，安装 `Pillow pymupdf imageio-ffmpeg` 后运行 `python3.11 scripts/prepare_assets.py`。常规运行与构建只需 Node.js。
+The 61.9% and 49.6% reductions are reported in the paper's abstract. Charts select the strongest dense baseline separately for each evaluation setting and retain settings where TartanMatch is not the best-performing method. Runtime values of 27.8, 27.6, 206.4, and 262.4 ms come from Table II; the displayed speedup over MatchAnything is 7.4×. Transfer examples illustrate qualitative behavior without making quantitative performance claims.
 
-## 素材方向核对（修订）
+The supplied PDF contains submission-template placeholders. The website does not assign an unconfirmed venue, DOI, arXiv identifier, or code repository. BibTeX uses a manuscript entry that can be updated with the final publication details.
 
-- 原固定图像对讲解区已由完整论文 Abstract 替换；25 配对与真实场景交互演示保留。
-- 25 配对与真实场景视频：保留原始完整三栏，左为固定 source，中间为变化的 target，右为 source warped 到当前 target。网页明确提示比较第 3 栏与第 2 栏。
-- 第二份 PPT 第 82 页：retina image98/99 为输入，image101 为 target→source，image100 为 source→target；satellite image102/103 为输入，image104 为 target→source，image105 为 source→target。网页按原 PPT 展示两幅输入及两个方向，不再将 image104 错标为 warped source。
-- 静态图像对的 GIF 是从原图到预测对齐的过渡演示，不是时间序列；页面已区分这两类动画。暂停或减少动态效果时，首屏使用最终对齐帧作封面。
-- 移除页头、页脚的放射状星号，保留 TartanMatch 文字标识。
+Asset extraction requires Python 3.11 and `Pillow`, `pymupdf`, and `imageio-ffmpeg`. The extraction scripts are provided for reference and regeneration from the original source files; normal preview and build operations only require Node.js.
 
-## 论文标题背景视频
+## Warp directions and interpretation
 
-背景使用 `tartanmatch_talk_finalized.pptx` 第 1、81、82 页的 8 组 matching，保留连续铺满的现有排版。
+- The full paper abstract precedes the interactive 25-pair and real-world demonstrations.
+- The 25-pair and real-world videos preserve all three original panels: a fixed source on the left, a changing target in the middle, and the source warped into the current target view on the right. Captions direct viewers to compare panel 3 with panel 2.
+- On slide 82 of `tartanmatch_pre_final (4) (1).pptx`, retinal inputs are `image98` and `image99`; `image101` is target → source, and `image100` is source → target. Satellite inputs are `image102` and `image103`; `image104` is target → source, and `image105` is source → target. The page shows both inputs and both directions accordingly.
+- Animations of fixed image pairs transition from the original image to the predicted alignment; they are distinct from videos with a changing target view. Title-background posters show the final alignment for the static fallback and reduced-motion mode.
+- The header and footer use the TartanMatch wordmark.
 
-- 同模态：Depth/Depth、稀疏 Depth/Depth。
-- 跨模态：RGB/Depth、RGB/Thermal、Depth/RGB、RGB/Event、LiDAR/RGB、稀疏 RGB/Depth。
-- 每组上方为 Source / Target 原图，下方为 Target → Source / Source → Target 动画；第 81 页的 Depth→RGB 组已按 source/target 语义重新排列。
-- 桌面视频 1920×960，4 列 × 2 行；手机视频 900×1800，2 列 × 4 行。静音循环 12 秒。
-- `scripts/prepare_hero_video.py` 直接读取指定 finalized PPT，合成视频与最终对齐帧封面。素材和原幻灯片的对应关系保存在 `assets/hero-media-sources.json`。
-- 作者字号为桌面 18px、手机 14px；机构移动到贡献说明下方，字号分别为 18px / 16px。
-- 支持暂停、离屏暂停、减少动态效果时显示静态封面。
+## Title background video
+
+The background uses eight matching groups from slides 1, 81, and 82 of `tartanmatch_talk_finalized.pptx` in a continuous grid.
+
+- Same-modal pairs: Depth/Depth and sparse Depth/Depth.
+- Cross-modal pairs: RGB/Depth, RGB/Thermal, Depth/RGB, RGB/Event, LiDAR/RGB, and sparse RGB/Depth.
+- Each group shows source and target inputs above target → source and source → target warps. The Depth/RGB group from slide 81 is reordered to follow this convention.
+- Desktop video: 1920 × 960, arranged in four columns and two rows. Mobile video: 900 × 1800, arranged in two columns and four rows. Both loop silently for 12 seconds.
+- `scripts/prepare_hero_video.py` reads the finalized presentation and generates the videos and final-alignment posters. `assets/hero-media-sources.json` records the mapping between each group and the original slide media.
+- Author names use 18 px text on desktop and 14 px on mobile. The affiliation appears below the contribution notes, at 18 px on desktop and 16 px on mobile.
+- Playback supports a pause control, automatic pausing offscreen, and a static poster for reduced-motion preferences.
