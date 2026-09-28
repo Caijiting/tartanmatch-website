@@ -1,0 +1,15 @@
+.work/
+dist/
+node_modules/
+*.log
+.DS_Store
+
+# Original research files; web-ready media is committed under assets/.
+*.pptx
+/*.pdf
+
+# Local credentials and Python caches.
+.env
+.env.*
+__pycache__/
+*.pyc

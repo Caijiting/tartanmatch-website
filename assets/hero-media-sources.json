@@ -1,0 +1,77 @@
+{
+  "presentation": "tartanmatch_talk_finalized.pptx",
+  "groups": [
+    {
+      "label": "Depth \u2194 Depth",
+      "category": "SAME MODALITY",
+      "slide": 1,
+      "source": "image1.png",
+      "target": "image2.png",
+      "target_to_source": "image3.gif",
+      "source_to_target": "image4.gif"
+    },
+    {
+      "label": "Depth \u2194 Depth \u00b7 sparse",
+      "category": "SAME MODALITY",
+      "slide": 82,
+      "source": "image95.png",
+      "target": "image96.png",
+      "target_to_source": "image98.gif",
+      "source_to_target": "image97.gif"
+    },
+    {
+      "label": "RGB \u2194 Depth",
+      "category": "CROSS MODALITY",
+      "slide": 1,
+      "source": "image5.png",
+      "target": "image2.png",
+      "target_to_source": "image6.gif",
+      "source_to_target": "image7.gif"
+    },
+    {
+      "label": "RGB \u2194 Thermal",
+      "category": "CROSS MODALITY",
+      "slide": 1,
+      "source": "image8.png",
+      "target": "image9.png",
+      "target_to_source": "image10.gif",
+      "source_to_target": "image11.gif"
+    },
+    {
+      "label": "Depth \u2194 RGB",
+      "category": "CROSS MODALITY",
+      "slide": 81,
+      "source": "image84.png",
+      "target": "image83.png",
+      "target_to_source": "image85.gif",
+      "source_to_target": "image86.gif"
+    },
+    {
+      "label": "RGB \u2194 Event",
+      "category": "CROSS MODALITY",
+      "slide": 81,
+      "source": "image87.png",
+      "target": "image88.png",
+      "target_to_source": "image90.gif",
+      "source_to_target": "image89.gif"
+    },
+    {
+      "label": "LiDAR \u2194 RGB",
+      "category": "CROSS MODALITY",
+      "slide": 1,
+      "source": "image12.png",
+      "target": "image13.png",
+      "target_to_source": "image14.gif",
+      "source_to_target": "image15.gif"
+    },
+    {
+      "label": "RGB \u2194 Depth \u00b7 sparse",
+      "category": "CROSS MODALITY",
+      "slide": 82,
+      "source": "image91.png",
+      "target": "image92.png",
+      "target_to_source": "image94.gif",
+      "source_to_target": "image93.gif"
+    }
+  ]
+}

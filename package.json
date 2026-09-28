@@ -1,0 +1,11 @@
+{
+  "name": "tartanmatch-project-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local TartanMatch research project website",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}
