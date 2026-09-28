@@ -4,7 +4,7 @@ Static project website for **TartanMatch: Towards Universal Dense Matching Acros
 
 ## Local preview
 
-Requires Node.js 18 or later. No npm dependency installation is needed. Cloning this private repository requires an authorized GitHub account.
+Requires Node.js 18 or later. No npm dependency installation is needed. The repository is public and can be cloned without signing in.
 
 ```bash
 git clone https://github.com/Caijiting/tartanmatch-website.git
@@ -48,7 +48,7 @@ When working on a remote machine over SSH, forward port 3000 to your computer us
 npm run build
 ```
 
-This creates a standalone `dist/` directory suitable for static hosting, including GitHub Pages. The site is currently available for local preview and has not been deployed.
+This creates a standalone `dist/` directory suitable for static hosting, including GitHub Pages. The production site is hosted on GitHub Pages at https://caijiting.github.io/tartanmatch-website/.
 
 The repository includes all assets required to run and build the website. Original presentations, the root-level paper copy, `.work/`, and `dist/` are excluded from version control. To regenerate assets, place the original source files in the project root.
 
@@ -56,11 +56,11 @@ The repository includes all assets required to run and build the website. Origin
 
 The `gh-pages` branch contains only the built website and a `.nojekyll` file. In repository settings, enable **Pages → Deploy from a branch**, select **gh-pages**, and use the root directory (`/`). GitHub publishes updates pushed to this branch.
 
-The intended project URL is https://caijiting.github.io/tartanmatch-website/.
+Live website: https://caijiting.github.io/tartanmatch-website/.
 
 To update the site, run `npm run build`, copy the contents of `dist/` into a checkout of `gh-pages`, preserve `.nojekyll`, then commit and push that branch.
 
-Deployment is currently pending: GitHub rejected Pages activation because the current account plan does not support Pages for this private repository. Activation requires a supported plan or a change to repository visibility.
+The repository is public. GitHub Pages publishes the root of `gh-pages` over HTTPS.
 
 ## Media and data sources
 
